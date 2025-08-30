@@ -22,7 +22,7 @@ X = st.number_input(
 
 st.sidebar.title("About This App")
 st.sidebar.markdown("""
-This app uses a quadratic regression model to predict outcomes based on a single input variable **X**.
+This app uses a cubic regression model to predict outcomes based on a single input variable **X**.
 Cubic models are useful when the relationship between variables follows a more complex curve, allowing for two bends in the data. This makes them ideal for capturing patterns that change direction more than once, such as growth followed by decline or vice versa.
 Try entering different values to see how predictions change!
 """)
@@ -45,4 +45,5 @@ if st.button("Submit For Prediction"):
     st.subheader(f"Based on the X value provided, the predicted value is {pred_value:.2f}")
     
 st.markdown("---")
+
 st.markdown("Created by Santhosh | Powered by Streamlit & scikit-learn")
